@@ -1,82 +1,130 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.10.2 on win32)" generated="20220125 14:58:30.232" rpa="false" schemaversion="2">
-<suite id="s1" name="Test produto" source="C:\Users\Luis\Desktop\Automation\test\Test_produto.robot">
-<test id="s1-t1" name="Caso de Teste 03: Conferir se o produto adicionado ao carrinho esta certo">
+<robot generator="Robot 4.1.3 (Python 3.10.2 on win32)" generated="20220125 19:57:41.176" rpa="false" schemaversion="2">
+<suite id="s1" name="Test usuario" source="C:\Users\Luis\Desktop\Automation\test\Test_usuario.robot">
+<test id="s1-t1" name="Caso de Teste 04: Cadastro de ususario">
 <kw name="Abrir navegador" library="Resource" type="SETUP">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>about:blank</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220125 14:58:30.473" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20220125 14:58:30.472" endtime="20220125 14:58:31.850"/>
+<msg timestamp="20220125 19:57:41.418" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20220125 19:57:41.418" endtime="20220125 19:57:42.750"/>
 </kw>
-<status status="PASS" starttime="20220125 14:58:30.472" endtime="20220125 14:58:31.850"/>
+<status status="PASS" starttime="20220125 19:57:41.417" endtime="20220125 19:57:42.750"/>
 </kw>
 <kw name="Acessar a pagina do home" library="Resource">
 <kw name="Go To" library="SeleniumLibrary">
 <arg>${URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20220125 14:58:31.851" level="INFO">Opening url 'https://www.saucedemo.com/'</msg>
-<status status="PASS" starttime="20220125 14:58:31.851" endtime="20220125 14:58:32.327"/>
+<msg timestamp="20220125 19:57:42.752" level="INFO">Opening url 'https://www.saucedemo.com/'</msg>
+<status status="PASS" starttime="20220125 19:57:42.752" endtime="20220125 19:57:43.197"/>
 </kw>
 <kw name="Title Should Be" library="SeleniumLibrary">
 <arg>Swag Labs</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20220125 14:58:32.332" level="INFO">Page title is 'Swag Labs'.</msg>
-<status status="PASS" starttime="20220125 14:58:32.328" endtime="20220125 14:58:32.332"/>
+<msg timestamp="20220125 19:57:43.205" level="INFO">Page title is 'Swag Labs'.</msg>
+<status status="PASS" starttime="20220125 19:57:43.197" endtime="20220125 19:57:43.205"/>
 </kw>
-<status status="PASS" starttime="20220125 14:58:31.851" endtime="20220125 14:58:32.332"/>
+<status status="PASS" starttime="20220125 19:57:42.751" endtime="20220125 19:57:43.205"/>
 </kw>
 <kw name="Preencher o campo &quot;usuario&quot;" library="Resource">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id=user-name</arg>
 <arg>standard_user</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220125 14:58:32.334" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
-<status status="PASS" starttime="20220125 14:58:32.333" endtime="20220125 14:58:32.427"/>
+<msg timestamp="20220125 19:57:43.207" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
+<status status="PASS" starttime="20220125 19:57:43.206" endtime="20220125 19:57:43.319"/>
 </kw>
-<status status="PASS" starttime="20220125 14:58:32.333" endtime="20220125 14:58:32.427"/>
+<status status="PASS" starttime="20220125 19:57:43.206" endtime="20220125 19:57:43.319"/>
 </kw>
 <kw name="Preencher o campo &quot;senha&quot;" library="Resource">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id=password</arg>
 <arg>secret_sauce</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220125 14:58:32.428" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
-<status status="PASS" starttime="20220125 14:58:32.428" endtime="20220125 14:58:32.511"/>
+<msg timestamp="20220125 19:57:43.320" level="INFO">Typing text 'secret_sauce' into text field 'id=password'.</msg>
+<status status="PASS" starttime="20220125 19:57:43.320" endtime="20220125 19:57:43.421"/>
 </kw>
-<status status="PASS" starttime="20220125 14:58:32.428" endtime="20220125 14:58:32.511"/>
+<status status="PASS" starttime="20220125 19:57:43.320" endtime="20220125 19:57:43.421"/>
 </kw>
 <kw name="Clicar no botao &quot;login&quot;" library="Resource">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>id=login-button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220125 14:58:32.513" level="INFO">Clicking element 'id=login-button'.</msg>
-<status status="PASS" starttime="20220125 14:58:32.512" endtime="20220125 14:58:32.623"/>
+<msg timestamp="20220125 19:57:43.423" level="INFO">Clicking element 'id=login-button'.</msg>
+<status status="PASS" starttime="20220125 19:57:43.423" endtime="20220125 19:57:43.542"/>
 </kw>
-<status status="PASS" starttime="20220125 14:58:32.512" endtime="20220125 14:58:32.623"/>
+<status status="PASS" starttime="20220125 19:57:43.422" endtime="20220125 19:57:43.542"/>
 </kw>
 <kw name="Adicionar o &quot;produto&quot; ao &quot;carrinho&quot;" library="Resource">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>id=add-to-cart-sauce-labs-fleece-jacket</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220125 14:58:32.625" level="INFO">Clicking element 'id=add-to-cart-sauce-labs-fleece-jacket'.</msg>
-<status status="PASS" starttime="20220125 14:58:32.624" endtime="20220125 14:58:32.772"/>
+<msg timestamp="20220125 19:57:43.544" level="INFO">Clicking element 'id=add-to-cart-sauce-labs-fleece-jacket'.</msg>
+<status status="PASS" starttime="20220125 19:57:43.543" endtime="20220125 19:57:43.630"/>
 </kw>
-<status status="PASS" starttime="20220125 14:58:32.624" endtime="20220125 14:58:32.772"/>
+<status status="PASS" starttime="20220125 19:57:43.542" endtime="20220125 19:57:43.631"/>
 </kw>
 <kw name="Clicar no &quot;carrinho&quot;" library="Resource">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>id=shopping_cart_container</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220125 14:58:32.774" level="INFO">Clicking element 'id=shopping_cart_container'.</msg>
-<status status="PASS" starttime="20220125 14:58:32.774" endtime="20220125 14:58:32.823"/>
+<msg timestamp="20220125 19:57:43.632" level="INFO">Clicking element 'id=shopping_cart_container'.</msg>
+<status status="PASS" starttime="20220125 19:57:43.632" endtime="20220125 19:57:43.687"/>
 </kw>
-<status status="PASS" starttime="20220125 14:58:32.773" endtime="20220125 14:58:32.824"/>
+<status status="PASS" starttime="20220125 19:57:43.631" endtime="20220125 19:57:43.687"/>
 </kw>
-<status status="PASS" starttime="20220125 14:58:30.471" endtime="20220125 14:58:32.824"/>
+<kw name="Clicar no botao &quot;checkout&quot;" library="Resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="checkout"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220125 19:57:43.689" level="INFO">Clicking element 'xpath=//*[@id="checkout"]'.</msg>
+<status status="PASS" starttime="20220125 19:57:43.688" endtime="20220125 19:57:43.741"/>
+</kw>
+<status status="PASS" starttime="20220125 19:57:43.688" endtime="20220125 19:57:43.741"/>
+</kw>
+<kw name="Preencher o &quot;nome&quot;" library="Resource">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=first-name</arg>
+<arg>manerinho</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220125 19:57:43.743" level="INFO">Typing text 'manerinho' into text field 'id=first-name'.</msg>
+<status status="PASS" starttime="20220125 19:57:43.742" endtime="20220125 19:57:43.867"/>
+</kw>
+<status status="PASS" starttime="20220125 19:57:43.742" endtime="20220125 19:57:43.868"/>
+</kw>
+<kw name="Preencher o &quot;sobrenome&quot;" library="Resource">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=last-name</arg>
+<arg>silva</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220125 19:57:43.870" level="INFO">Typing text 'silva' into text field 'id=last-name'.</msg>
+<status status="PASS" starttime="20220125 19:57:43.869" endtime="20220125 19:57:43.949"/>
+</kw>
+<status status="PASS" starttime="20220125 19:57:43.869" endtime="20220125 19:57:43.950"/>
+</kw>
+<kw name="Preencher o &quot;CEP&quot;" library="Resource">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=postal-code</arg>
+<arg>05516020</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220125 19:57:43.951" level="INFO">Typing text '05516020' into text field 'id=postal-code'.</msg>
+<status status="PASS" starttime="20220125 19:57:43.950" endtime="20220125 19:57:44.030"/>
+</kw>
+<status status="PASS" starttime="20220125 19:57:43.950" endtime="20220125 19:57:44.030"/>
+</kw>
+<kw name="Clicar no &quot;continue&quot;" library="Resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id=continue</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220125 19:57:44.032" level="INFO">Clicking element 'id=continue'.</msg>
+<status status="PASS" starttime="20220125 19:57:44.031" endtime="20220125 19:57:44.084"/>
+</kw>
+<status status="PASS" starttime="20220125 19:57:44.031" endtime="20220125 19:57:44.084"/>
+</kw>
+<status status="PASS" starttime="20220125 19:57:41.417" endtime="20220125 19:57:44.085"/>
 </test>
-<status status="PASS" starttime="20220125 14:58:30.234" endtime="20220125 14:58:32.825"/>
+<status status="PASS" starttime="20220125 19:57:41.178" endtime="20220125 19:57:44.086"/>
 </suite>
 <statistics>
 <total>
@@ -85,7 +133,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Test produto">Test produto</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test usuario">Test usuario</stat>
 </suite>
 </statistics>
 <errors>
