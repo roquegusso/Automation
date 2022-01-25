@@ -27,4 +27,12 @@ Preencher o campo "senha"
 Clicar no botao "login"
     Click Element       id=login-button
 
+Adicionar o "produto" ao "carrinho"
+    Click Element       id=add-to-cart-sauce-labs-fleece-jacket
+
+Clicar no "carrinho"
+    Click Element       id=shopping_cart_container
+
+
+
 
